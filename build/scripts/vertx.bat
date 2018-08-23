@@ -63,10 +63,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\vertx.jar
+set CLASSPATH=%APP_HOME%\lib\vertx.jar;%APP_HOME%\lib\vertx-hazelcast-3.5.3.jar;%APP_HOME%\lib\vertx-core-3.5.3.jar;%APP_HOME%\lib\slf4j-api-1.7.25.jar;%APP_HOME%\lib\netty-codec-http2-4.1.19.Final.jar;%APP_HOME%\lib\netty-handler-4.1.19.Final.jar;%APP_HOME%\lib\netty-handler-proxy-4.1.19.Final.jar;%APP_HOME%\lib\netty-resolver-dns-4.1.19.Final.jar;%APP_HOME%\lib\netty-codec-http-4.1.19.Final.jar;%APP_HOME%\lib\netty-codec-socks-4.1.19.Final.jar;%APP_HOME%\lib\netty-codec-dns-4.1.19.Final.jar;%APP_HOME%\lib\netty-codec-4.1.19.Final.jar;%APP_HOME%\lib\netty-transport-4.1.19.Final.jar;%APP_HOME%\lib\netty-buffer-4.1.19.Final.jar;%APP_HOME%\lib\netty-resolver-4.1.19.Final.jar;%APP_HOME%\lib\netty-common-4.1.19.Final.jar;%APP_HOME%\lib\jackson-databind-2.9.5.jar;%APP_HOME%\lib\jackson-core-2.9.5.jar;%APP_HOME%\lib\hazelcast-3.8.2.jar;%APP_HOME%\lib\jackson-annotations-2.9.0.jar
 
 @rem Execute vertx
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %VERTX_OPTS%  -classpath "%CLASSPATH%" Test %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %VERTX_OPTS%  -classpath "%CLASSPATH%" VerticleManager %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
