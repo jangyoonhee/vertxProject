@@ -1,0 +1,11 @@
+# initialize verticle.. (verticle, instanceCount)
+# now used verticle list
+# HttpInternalVerticle : http web admin module
+# SchedulerVerticle : schedule runner module
+# MigratorVerticle : real batch job module
+# ComparerVerticle : Compare Schedule module
+
+HttpInternalVerticle.HttpInternalVerticle,1
+SchedulerVerticle.SchedulerVerticle,1
+MigratorVerticle.MigratorVerticle,4
+ComparerVerticle.ComparerVerticle,1
