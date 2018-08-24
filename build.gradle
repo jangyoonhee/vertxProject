@@ -17,13 +17,13 @@ def vertxVersion = '3.5.3'
 
 repositories {
 	mavenCentral();
+
 }
 
 dependencies {
 	compile "io.vertx:vertx-core:${vertxVersion}"
 	compile "org.slf4j:slf4j-api:1.7.25"
 	compile "io.vertx:vertx-hazelcast:${vertxVersion}"
-
 }
 
 sourceSets {

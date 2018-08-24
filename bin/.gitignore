@@ -1,3 +1,7 @@
-/Library.class
-/MainVerticle.class
-/Test.class
+/.gradle/
+/build/
+.classpath
+.project
+.settings/
+bin/
+
