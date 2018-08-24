@@ -10,15 +10,30 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-mainClassName = 'Test'
+mainClassName = 'VerticleManager'
 def defaultEncoding = 'UTF-8'
 sourceCompatibility = 1.8   // Java 호환 버전을 1.8로 설정
 def vertxVersion = '3.5.3'
 
 repositories {
 	mavenCentral();
+
 }
 
 dependencies {
+	compile "io.vertx:vertx-core:${vertxVersion}"
+	compile "org.slf4j:slf4j-api:1.7.25"
+	compile "io.vertx:vertx-hazelcast:${vertxVersion}"
+}
 
+sourceSets {
+
+	main {
+		java {
+			srcDirs = ['src/main/java']
+		}
+		resources {
+			srcDirs = ['src/main/resources']
+		}
+	}
 }
