@@ -33,6 +33,8 @@ public class VerticleManager extends AbstractCustomVerticle {
 
 		String name;
 		int instanceCount;
+
+
 		//test
 	}
 
